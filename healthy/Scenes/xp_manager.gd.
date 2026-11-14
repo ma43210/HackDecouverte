@@ -1,0 +1,29 @@
+extends Node
+
+var xp = 0
+var level = 1
+var xp_to_next_level = 100
+func add_xp(amount: int) -> void:
+    xp += amount
+    check_level_up()
+func check_level_up() -> void:
+
+    while xp >= xp_to_next_level:
+
+        xp -= xp_to_next_level
+
+        level += 1
+
+        xp_to_next_level += 50
+
+        print("LEVEL UP!")
+        print("Current Level: ", level)
+func _ready() -> void:
+
+    print("Starting XP: ", xp)
+    print("Starting Level: ", level)
+
+    add_xp(120)
+
+    print("Final XP: ", xp)
+    print("Final Level: ", level)
