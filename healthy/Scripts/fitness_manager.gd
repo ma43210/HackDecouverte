@@ -18,8 +18,8 @@ func _ready() -> void:
 	file.close()
 	age = data["age"]
 	user = data["user"]
-	age = data["age"]
-	
+	weight = data["weight"]
+	level = data["level"]
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta: float) -> void:
 	data = {
