@@ -7,20 +7,14 @@ var xp_to_next_level = 50 * FitnessManager.level
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-
-	print("Starting XP: ", xp)
-	print("Starting Level: ", FitnessManager.level)
-
-	add_xp(120)
-
-	print("Final XP: ", xp)
-	print("Final Level: ", FitnessManager.level)
+	pass
 
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta: float) -> void:
-	add_xp(FitnessManager.calories)
+	if FitnessManager.new_input:
+		add_xp(FitnessManager.calories)
 
 
 func add_xp(amount: int) -> void:

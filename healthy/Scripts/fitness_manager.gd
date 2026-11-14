@@ -9,6 +9,9 @@ var MET = 0
 var calories = 0
 var data = {}
 var save_path = "user://save.save"
+var old_MET = 0
+var old_time = 0
+var new_input = false
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -29,6 +32,13 @@ func _process(_delta: float) -> void:
 	"level": level,
 	"age": age,
 	}
+	
+	if time != old_time or MET != old_MET:
+		new_input = true
+	else:
+		new_input = false
+	old_MET = MET
+	old_time = time
 	var file = FileAccess.open(save_path, FileAccess.WRITE)
 	file.store_string(JSON.stringify(data))
 	file.close()
