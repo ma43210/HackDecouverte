@@ -18,22 +18,13 @@ offset_right = 67.5
 offset_bottom = 67.0
 placeholder_text = "Age"
 
-[node name="Height" type="LineEdit" parent="." unique_id=100432617]
-offset_left = -1.0
-offset_top = 75.0
-offset_right = 108.0
-offset_bottom = 106.0
-placeholder_text = "Height (ft, in)"
-
 [node name="Continue" type="Button" parent="." unique_id=1922958034]
-offset_left = -1.0
-offset_top = 126.0
-offset_right = 152.0
-offset_bottom = 157.0
+offset_top = 80.0
+offset_right = 153.0
+offset_bottom = 111.0
 text = "Save and Continue"
 script = ExtResource("2_yili2")
 
 [connection signal="text_submitted" from="Weight" to="." method="_on_weight_text_submitted"]
 [connection signal="text_submitted" from="Age" to="." method="_on_age_text_submitted"]
-[connection signal="text_submitted" from="Height" to="." method="_on_height_text_submitted"]
 [connection signal="pressed" from="Continue" to="Continue" method="_on_pressed"]

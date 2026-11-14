@@ -24,7 +24,3 @@ func _on_weight_text_submitted(new_text: String) -> void:
 func _on_age_text_submitted(new_text: String) -> void:
 	FitnessManager.age = int(new_text)
 	
-
-
-func _on_height_text_submitted(new_text: String) -> void:
-	FitnessManager.height = int(new_text)

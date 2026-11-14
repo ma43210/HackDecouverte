@@ -1,5 +1,5 @@
 extends Node
-var MET = 0
+var level = 0
 var height = 0
 var weight = 0
 var age = 0
@@ -11,5 +11,5 @@ func _ready() -> void:
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
+func _process(_delta: float) -> void:
 	pass

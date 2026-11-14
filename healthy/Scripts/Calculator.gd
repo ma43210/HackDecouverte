@@ -13,4 +13,4 @@ func _process(_delta: float) -> void:
 
 
 func _on_line_edit_text_submitted(new_text: String) -> void:
-	FitnessManager.time = new_text
+	FitnessManager.time = int(new_text)
