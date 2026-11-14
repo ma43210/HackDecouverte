@@ -1,6 +1,9 @@
 [gd_scene format=3 uid="uid://b8r0p805j8qvv"]
 
-[node name="Node2D" type="Node2D" unique_id=1530753749]
+[ext_resource type="Script" uid="uid://ck6yrxu2nekja" path="res://Scripts/profile_manager.gd" id="1_s8vry"]
+
+[node name="Profile Manager" type="Node2D" unique_id=1530753749]
+script = ExtResource("1_s8vry")
 
 [node name="Weight" type="LineEdit" parent="." unique_id=28725875]
 offset_right = 100.0
@@ -22,10 +25,9 @@ offset_bottom = 106.0
 placeholder_text = "Height (ft, in)"
 
 [node name="ItemList" type="ItemList" parent="." unique_id=976666730]
-offset_left = -1.0
-offset_top = 117.0
-offset_right = 303.0
-offset_bottom = 270.0
+offset_top = 114.0
+offset_right = 304.0
+offset_bottom = 262.0
 allow_reselect = true
 item_count = 5
 item_0/text = "Fitness Level (Use a Calculator Online)"
