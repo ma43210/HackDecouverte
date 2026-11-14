@@ -8,7 +8,12 @@
 offset_right = 457.0
 offset_bottom = 641.0
 allow_reselect = true
-item_count = 5
-item_0/text = "Cardio"
-item_1/text = "Weight Lifting"
+item_count = 6
+item_0/text = "Workout Type:"
+item_0/selectable = false
+item_1/text = "Cycling"
+item_2/text = "Elliptical"
+item_3/text = "Running"
+item_4/text = "Walking"
+item_5/text = "Weight Training"
 script = ExtResource("1_7q3j2")

@@ -1,5 +1,4 @@
 extends Node2D
-var level = 0
 var weight = 0
 var height = 0
 var age = 0
@@ -14,16 +13,7 @@ func _process(_delta: float) -> void:
 		pass
 
 
-func _on_item_list_item_selected(index: int) -> void:
-	if index == 1:
-		level = 1
-	if index == 2:
-		level = 2
-	if index == 3:
-		level = 4
-	if index == 4:
-		level = 7.5
-	print(level)
+
 
 
 func _on_weight_text_submitted(new_text: String) -> void:
@@ -38,7 +28,3 @@ func _on_age_text_submitted(new_text: String) -> void:
 
 func _on_height_text_submitted(new_text: String) -> void:
 	height = int(new_text)
-	print(level)
-	print(height)
-	print(age)
-	print(weight)
