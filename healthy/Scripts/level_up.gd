@@ -18,5 +18,6 @@ func _process(_delta: float) -> void:
 		var angle = randf_range(0, 360)
 		self.rotation_degrees = angle
 		self.show()
+		got_it.play_sound()
 		await get_tree().create_timer(0.5).timeout
 		self.hide()

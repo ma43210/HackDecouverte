@@ -9,6 +9,7 @@
 [ext_resource type="Script" uid="uid://b5wqpy7oaqngg" path="res://Scenes/name.gd" id="7_1oy2e"]
 [ext_resource type="Texture2D" uid="uid://cu6xvhn1qmxwf" path="res://Level_Up.png" id="8_j8f14"]
 [ext_resource type="Script" uid="uid://bbhgimyg8joj8" path="res://Scripts/level_up.gd" id="9_52ga0"]
+[ext_resource type="Script" uid="uid://oxa5a6ices6v" path="res://Scripts/audio_stream_player_2d.gd" id="10_3t0ii"]
 
 [node name="Node2D" type="Node2D" unique_id=1483333031]
 script = ExtResource("1_2av5n")
@@ -79,6 +80,10 @@ position = Vector2(829, 373.00003)
 scale = Vector2(0.13692106, 0.10784211)
 texture = ExtResource("8_j8f14")
 script = ExtResource("9_52ga0")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=609945591]
+volume_db = 12.0
+script = ExtResource("10_3t0ii")
 
 [connection signal="item_selected" from="ItemList" to="ItemList" method="_on_item_selected"]
 [connection signal="text_submitted" from="LineEdit" to="." method="_on_line_edit_text_submitted"]

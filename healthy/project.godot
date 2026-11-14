@@ -20,6 +20,7 @@ config/icon="res://icon.svg"
 FitnessManager="*uid://fs48ukdjki2l"
 xp_manager="*uid://bl7o6d6hfop3"
 Music="*uid://bfliv16j4nky6"
+got_it="*uid://oxa5a6ices6v"
 
 [display]
 
