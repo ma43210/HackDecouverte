@@ -8,7 +8,7 @@ var user = ""
 var MET = 0
 var calories = 0
 var data = {}
-var save_path = "user://savegame.json"
+var save_path = "user://save.save"
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -27,6 +27,7 @@ func _process(_delta: float) -> void:
 	"user": user,
 	"weight": weight,
 	"level": level,
+	"age": age,
 	}
 	var file = FileAccess.open(save_path, FileAccess.WRITE)
 	file.store_string(JSON.stringify(data))

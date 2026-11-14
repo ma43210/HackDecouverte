@@ -9,4 +9,4 @@ func _ready() -> void:
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta: float) -> void:
 	FitnessManager.calories = (FitnessManager.MET * 3.5 * FitnessManager.weight) / 200 * FitnessManager.time
-	text = "Calories burned: " + FitnessManager.calories
+	text = "Calories burned: " + str(FitnessManager.calories)
