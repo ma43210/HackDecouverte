@@ -1,6 +1,6 @@
 # HackDecouverte
 Everyone's skills:
-Matthew: Game Dev
+Matthew: Game dev, some python.
 
 
 
