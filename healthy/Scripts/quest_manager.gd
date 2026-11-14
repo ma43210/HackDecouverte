@@ -110,7 +110,7 @@ func check_quest_completion(quest: Dictionary) -> void:
 
 		quest["completed"] = true
 
-		XPManager.add_xp(quest["reward"])
+		xp_manager.add_xp(quest["reward"])
 
 		print("Quest completed: ", quest["name"])
 		print("XP earned: ", quest["reward"])

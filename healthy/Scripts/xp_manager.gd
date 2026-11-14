@@ -1,7 +1,7 @@
 extends Node
 
 var xp = 0
-var xp_to_next_level = 100
+var xp_to_next_level = 50 * FitnessManager.level
 
 
 
@@ -19,7 +19,7 @@ func _ready() -> void:
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
+func _process(_delta: float) -> void:
 	add_xp(FitnessManager.calories)
 
 
