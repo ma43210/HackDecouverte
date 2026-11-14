@@ -1,16 +1,16 @@
 # HackDecouverte
 Everyone's skills:
-Matthew: Game dev, some python.
+-Matthew: Game dev, some python.
 
 
 
 
 
 Ideas:
-Eating healthy
+-Eating healthy:
 - Input calories.
 - Input workouts.
-- Something happens
+- Something happens.
 
 
 
