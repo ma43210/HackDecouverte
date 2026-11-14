@@ -6,6 +6,7 @@
 [ext_resource type="Script" uid="uid://cwawok12v62ho" path="res://Scripts/profile_button.gd" id="4_2c73x"]
 [ext_resource type="Texture2D" uid="uid://c6n7to3boesth" path="res://Profile Pics/8.png" id="4_j1dy5"]
 [ext_resource type="Script" uid="uid://cej2ceieo7ujq" path="res://Scripts/sprite_2d.gd" id="4_r137e"]
+[ext_resource type="Script" uid="uid://b5wqpy7oaqngg" path="res://Scenes/name.gd" id="7_1oy2e"]
 
 [node name="Node2D" type="Node2D" unique_id=1483333031]
 script = ExtResource("1_2av5n")
@@ -61,6 +62,14 @@ position = Vector2(53.50007, 51.781254)
 scale = Vector2(0.05349991, 0.051218748)
 texture = ExtResource("4_j1dy5")
 script = ExtResource("4_r137e")
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="." unique_id=377657291]
+offset_left = 1042.0
+offset_top = 115.0
+offset_right = 1139.0
+offset_bottom = 163.0
+horizontal_alignment = 1
+script = ExtResource("7_1oy2e")
 
 [connection signal="item_selected" from="ItemList" to="ItemList" method="_on_item_selected"]
 [connection signal="text_submitted" from="LineEdit" to="." method="_on_line_edit_text_submitted"]

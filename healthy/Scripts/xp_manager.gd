@@ -14,7 +14,7 @@ func _ready() -> void:
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta: float) -> void:
 	if FitnessManager.new_input:
-		add_xp(FitnessManager.calories)
+		add_xp(FitnessManager.calories/10)
 
 
 func add_xp(amount: int) -> void:
