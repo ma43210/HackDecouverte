@@ -1,6 +1,6 @@
 extends Node2D
+# Stores inputs for profile
 var weight = 0
-var height = 0
 var age = 0
 
 # Called when the node enters the scene tree for the first time.
@@ -24,3 +24,7 @@ func _on_weight_text_submitted(new_text: String) -> void:
 func _on_age_text_submitted(new_text: String) -> void:
 	FitnessManager.age = int(new_text)
 	
+
+
+func _on_line_edit_text_submitted(new_text: String) -> void:
+	FitnessManager.user = new_text

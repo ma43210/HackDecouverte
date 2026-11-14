@@ -7,24 +7,31 @@
 script = ExtResource("1_s8vry")
 
 [node name="Weight" type="LineEdit" parent="." unique_id=28725875]
-offset_right = 100.0
-offset_bottom = 31.0
+offset_left = 1.0
+offset_top = 43.0
+offset_right = 101.0
+offset_bottom = 74.0
 placeholder_text = "Weight (lb)"
 
 [node name="Age" type="LineEdit" parent="." unique_id=1569008885]
-offset_left = -1.0
-offset_top = 36.0
-offset_right = 67.5
-offset_bottom = 67.0
+offset_top = 87.0
+offset_right = 68.5
+offset_bottom = 118.0
 placeholder_text = "Age"
 
 [node name="Continue" type="Button" parent="." unique_id=1922958034]
-offset_top = 80.0
+offset_top = 124.0
 offset_right = 153.0
-offset_bottom = 111.0
+offset_bottom = 155.0
 text = "Save and Continue"
 script = ExtResource("2_yili2")
+
+[node name="LineEdit" type="LineEdit" parent="." unique_id=342238560]
+offset_right = 68.5
+offset_bottom = 31.0
+placeholder_text = "Name"
 
 [connection signal="text_submitted" from="Weight" to="." method="_on_weight_text_submitted"]
 [connection signal="text_submitted" from="Age" to="." method="_on_age_text_submitted"]
 [connection signal="pressed" from="Continue" to="Continue" method="_on_pressed"]
+[connection signal="text_submitted" from="LineEdit" to="." method="_on_line_edit_text_submitted"]

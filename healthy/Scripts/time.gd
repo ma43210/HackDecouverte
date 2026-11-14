@@ -1,4 +1,4 @@
-extends RichTextLabel
+extends Node2D
 
 
 # Called when the node enters the scene tree for the first time.
@@ -8,4 +8,9 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta: float) -> void:
-	text = "Calories burned: " + str((FitnessManager.level * 3.5 * FitnessManager.weight) / 200 * FitnessManager.time)
+	pass
+
+
+
+func _on_line_edit_text_submitted(new_text: String) -> void:
+	FitnessManager.time = int(new_text)
