@@ -17,14 +17,14 @@ func _process(_delta: float) -> void:
 
 
 func _on_weight_text_submitted(new_text: String) -> void:
-	weight = int(new_text)
+	FitnessManager.weight = int(new_text)
 
 
 
 func _on_age_text_submitted(new_text: String) -> void:
-	age = int(new_text)
+	FitnessManager.age = int(new_text)
 	
 
 
 func _on_height_text_submitted(new_text: String) -> void:
-	height = int(new_text)
+	FitnessManager.height = int(new_text)

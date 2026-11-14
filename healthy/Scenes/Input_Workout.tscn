@@ -17,3 +17,5 @@ item_3/text = "Running"
 item_4/text = "Walking"
 item_5/text = "Weight Training"
 script = ExtResource("1_7q3j2")
+
+[connection signal="item_selected" from="ItemList" to="ItemList" method="_on_item_selected"]
