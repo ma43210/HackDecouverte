@@ -6,6 +6,7 @@ var age = 0
 var time = 0
 var user = ""
 var MET = 0
+var calories = 0
 var data = {}
 var save_path = "user://savegame.json"
 
