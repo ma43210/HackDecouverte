@@ -1,0 +1,36 @@
+[gd_scene format=3 uid="uid://b8r0p805j8qvv"]
+
+[node name="Node2D" type="Node2D" unique_id=1530753749]
+
+[node name="Weight" type="LineEdit" parent="." unique_id=28725875]
+offset_right = 100.0
+offset_bottom = 31.0
+placeholder_text = "Weight (lb)"
+
+[node name="Age" type="LineEdit" parent="." unique_id=1569008885]
+offset_left = -1.0
+offset_top = 36.0
+offset_right = 67.5
+offset_bottom = 67.0
+placeholder_text = "Age"
+
+[node name="Height" type="LineEdit" parent="." unique_id=100432617]
+offset_left = -1.0
+offset_top = 75.0
+offset_right = 108.0
+offset_bottom = 106.0
+placeholder_text = "Height (ft, in)"
+
+[node name="ItemList" type="ItemList" parent="." unique_id=976666730]
+offset_left = -1.0
+offset_top = 117.0
+offset_right = 303.0
+offset_bottom = 270.0
+allow_reselect = true
+item_count = 5
+item_0/text = "Fitness Level (Use a Calculator Online)"
+item_0/selectable = false
+item_1/text = "Sedentary"
+item_2/text = "Lightly active"
+item_3/text = "Moderately active"
+item_4/text = "Highly active"

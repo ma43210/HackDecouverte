@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://ba7f2skroecyd"]
+
+[ext_resource type="Script" uid="uid://cy7ikr2w1q5im" path="res://Workout_Selected.gd" id="1_qu54j"]
+
+[node name="Node2D" type="Node2D" unique_id=1483333031]
+
+[node name="ItemList" type="ItemList" parent="." unique_id=1599876708]
+offset_right = 457.0
+offset_bottom = 641.0
+allow_reselect = true
+item_count = 5
+item_0/text = "Cardio"
+item_1/text = "Weight Lifting"
+script = ExtResource("1_qu54j")
