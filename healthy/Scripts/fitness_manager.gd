@@ -12,7 +12,7 @@ var save_path = "user://save.save"
 var old_MET = 0
 var old_time = 0
 var new_input = false
-
+var texture = ""
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	if not FileAccess.file_exists(save_path):
@@ -24,6 +24,7 @@ func _ready() -> void:
 	user = data["user"]
 	weight = data["weight"]
 	level = data["level"]
+	texture = data["texture"]
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta: float) -> void:
 	data = {
@@ -31,6 +32,7 @@ func _process(_delta: float) -> void:
 	"weight": weight,
 	"level": level,
 	"age": age,
+	"texture": texture,
 	}
 	
 	if time != old_time or MET != old_MET:
