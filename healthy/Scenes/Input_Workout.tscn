@@ -3,6 +3,9 @@
 [ext_resource type="Script" uid="uid://baax4gqlny0ga" path="res://Scripts/time.gd" id="1_2av5n"]
 [ext_resource type="Script" uid="uid://cy7ikr2w1q5im" path="res://Scripts/Workout_Selected.gd" id="1_7q3j2"]
 [ext_resource type="Script" uid="uid://brrwsv8mj1nwh" path="res://Scripts/calculator.gd" id="3_si1a3"]
+[ext_resource type="Script" uid="uid://cwawok12v62ho" path="res://Scripts/profile_button.gd" id="4_2c73x"]
+[ext_resource type="Texture2D" uid="uid://c6n7to3boesth" path="res://Profile Pics/8.png" id="4_j1dy5"]
+[ext_resource type="Script" uid="uid://cej2ceieo7ujq" path="res://Scripts/sprite_2d.gd" id="4_r137e"]
 
 [node name="Node2D" type="Node2D" unique_id=1483333031]
 script = ExtResource("1_2av5n")
@@ -38,12 +41,19 @@ offset_bottom = 32.0
 placeholder_text = "Time (Minutes)"
 
 [node name="Button" type="Button" parent="." unique_id=1605241628]
-offset_left = 609.0
-offset_top = 52.0
-offset_right = 687.9944
-offset_bottom = 126.785706
+offset_left = 1034.0
+offset_top = 12.0
+offset_right = 1139.9944
+offset_bottom = 117.0
+flat = true
+script = ExtResource("4_2c73x")
 
 [node name="Sprite2D" type="Sprite2D" parent="Button" unique_id=1264893930]
+position = Vector2(53.50007, 51.781254)
+scale = Vector2(0.05349991, 0.051218748)
+texture = ExtResource("4_j1dy5")
+script = ExtResource("4_r137e")
 
 [connection signal="item_selected" from="ItemList" to="ItemList" method="_on_item_selected"]
 [connection signal="text_submitted" from="LineEdit" to="." method="_on_line_edit_text_submitted"]
+[connection signal="pressed" from="Button" to="Button" method="_on_pressed"]
