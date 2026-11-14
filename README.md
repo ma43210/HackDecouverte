@@ -12,6 +12,6 @@ Ideas:
 - Input workouts.
 - Something happens.
 
-
+https://github.com/Wolfyxon/GodotTogether/releases/tag/v1.2-alpha
 
 
