@@ -6,6 +6,14 @@
 [node name="Profile Manager" type="Node2D" unique_id=1530753749]
 script = ExtResource("1_s8vry")
 
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1898021919]
+offset_left = -422.0
+offset_top = -297.0
+offset_right = 1978.0
+offset_bottom = 1258.0
+mouse_filter = 2
+color = Color(0.60784316, 0.43137255, 0.7372549, 1)
+
 [node name="Weight" type="LineEdit" parent="." unique_id=28725875]
 offset_left = 1.0
 offset_top = 43.0
