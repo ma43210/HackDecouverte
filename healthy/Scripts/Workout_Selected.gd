@@ -13,13 +13,13 @@ func _process(_delta: float) -> void:
 
 func _on_item_selected(index: int) -> void:
 	if index == 1: #Cycling
-		FitnessManager.level = 8
+		FitnessManager.MET = 8
 	if index == 2: #Elliptical
-		FitnessManager.level = 5
+		FitnessManager.MET = 5
 	if index == 3: #Running
-		FitnessManager.level = 9.8
+		FitnessManager.MET = 9.8
 	if index == 4: #Walking
-		FitnessManager.level = 4.3
+		FitnessManager.MET = 4.3
 	if index == 5: #Weights
-		FitnessManager.level = 6
+		FitnessManager.MET = 6
 	
