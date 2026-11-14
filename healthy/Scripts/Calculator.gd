@@ -7,5 +7,10 @@ func _ready() -> void:
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
+func _process(_delta: float) -> void:
 	pass
+
+
+
+func _on_line_edit_text_submitted(new_text: String) -> void:
+	FitnessManager.time = new_text

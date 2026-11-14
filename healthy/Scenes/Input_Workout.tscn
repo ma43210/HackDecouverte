@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://baax4gqlny0ga" path="res://Scripts/Calculator.gd" id="1_2av5n"]
 [ext_resource type="Script" uid="uid://cy7ikr2w1q5im" path="res://Scripts/Workout_Selected.gd" id="1_7q3j2"]
+[ext_resource type="Script" uid="uid://brrwsv8mj1nwh" path="res://Scripts/output.gd" id="3_si1a3"]
 
 [node name="Node2D" type="Node2D" unique_id=1483333031]
 script = ExtResource("1_2av5n")
@@ -23,15 +24,18 @@ script = ExtResource("1_7q3j2")
 [node name="RichTextLabel" type="RichTextLabel" parent="." unique_id=1951719665]
 offset_left = 3.0
 offset_top = 202.0
-offset_right = 260.0
-offset_bottom = 235.0
+offset_right = 158.0
+offset_bottom = 231.0
 bbcode_enabled = true
 text = "Calories Burned: 0"
+script = ExtResource("3_si1a3")
 
-[node name="TextEdit" type="TextEdit" parent="." unique_id=1299180459]
-offset_left = 475.0
-offset_right = 603.0
-offset_bottom = 38.0
+[node name="LineEdit" type="LineEdit" parent="." unique_id=1773505277]
+offset_left = 484.0
+offset_top = 1.0
+offset_right = 613.0
+offset_bottom = 32.0
 placeholder_text = "Time (Minutes)"
 
 [connection signal="item_selected" from="ItemList" to="ItemList" method="_on_item_selected"]
+[connection signal="text_submitted" from="LineEdit" to="." method="_on_line_edit_text_submitted"]
