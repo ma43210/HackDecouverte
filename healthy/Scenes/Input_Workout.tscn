@@ -1,12 +1,14 @@
 [gd_scene format=3 uid="uid://ba7f2skroecyd"]
 
+[ext_resource type="Script" uid="uid://baax4gqlny0ga" path="res://Scripts/Calculator.gd" id="1_2av5n"]
 [ext_resource type="Script" uid="uid://cy7ikr2w1q5im" path="res://Scripts/Workout_Selected.gd" id="1_7q3j2"]
 
 [node name="Node2D" type="Node2D" unique_id=1483333031]
+script = ExtResource("1_2av5n")
 
 [node name="ItemList" type="ItemList" parent="." unique_id=1599876708]
 offset_right = 457.0
-offset_bottom = 641.0
+offset_bottom = 173.0
 allow_reselect = true
 item_count = 6
 item_0/text = "Workout Type:"
@@ -17,5 +19,19 @@ item_3/text = "Running"
 item_4/text = "Walking"
 item_5/text = "Weight Training"
 script = ExtResource("1_7q3j2")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="." unique_id=1951719665]
+offset_left = 3.0
+offset_top = 202.0
+offset_right = 260.0
+offset_bottom = 235.0
+bbcode_enabled = true
+text = "Calories Burned: 0"
+
+[node name="TextEdit" type="TextEdit" parent="." unique_id=1299180459]
+offset_left = 475.0
+offset_right = 603.0
+offset_bottom = 38.0
+placeholder_text = "Time (Minutes)"
 
 [connection signal="item_selected" from="ItemList" to="ItemList" method="_on_item_selected"]
