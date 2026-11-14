@@ -6,12 +6,10 @@ func _ready() -> void:
 	list.shuffle()
 	if int(FitnessManager.texture) != 0:
 		num = FitnessManager.texture
-		print(num)
 	else:
 		num = list[1]
 		FitnessManager.texture = num
 	texture = load("res://Profile Pics/" + str(int(num)) + ".png")
-	print(texture)
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta: float) -> void:
 	pass

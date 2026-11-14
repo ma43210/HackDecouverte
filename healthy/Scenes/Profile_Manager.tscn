@@ -1,16 +1,17 @@
 [gd_scene format=3 uid="uid://b8r0p805j8qvv"]
 
 [ext_resource type="Script" uid="uid://ck6yrxu2nekja" path="res://Scripts/profile_manager.gd" id="1_s8vry"]
+[ext_resource type="Texture2D" uid="uid://1y3vq2502kpl" path="res://4.png" id="2_2clwq"]
 [ext_resource type="Script" uid="uid://37y2xxi6t5gt" path="res://Scripts/continue.gd" id="2_yili2"]
 
 [node name="Profile Manager" type="Node2D" unique_id=1530753749]
 script = ExtResource("1_s8vry")
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=1898021919]
-offset_left = -422.0
-offset_top = -297.0
-offset_right = 1978.0
-offset_bottom = 1258.0
+offset_left = -414.0
+offset_top = -264.0
+offset_right = 1986.0
+offset_bottom = 1291.0
 mouse_filter = 2
 color = Color(0.60784316, 0.43137255, 0.7372549, 1)
 
@@ -20,26 +21,35 @@ offset_top = 43.0
 offset_right = 101.0
 offset_bottom = 74.0
 placeholder_text = "Weight (lb)"
+metadata/_edit_use_anchors_ = true
 
 [node name="Age" type="LineEdit" parent="." unique_id=1569008885]
 offset_top = 87.0
 offset_right = 68.5
 offset_bottom = 118.0
 placeholder_text = "Age"
-
-[node name="Continue" type="Button" parent="." unique_id=1922958034]
-offset_top = 124.0
-offset_right = 153.0
-offset_bottom = 155.0
-text = "Save and Continue"
-script = ExtResource("2_yili2")
+metadata/_edit_use_anchors_ = true
 
 [node name="LineEdit" type="LineEdit" parent="." unique_id=342238560]
 offset_right = 68.5
 offset_bottom = 31.0
 placeholder_text = "Name"
+metadata/_edit_use_anchors_ = true
+
+[node name="Button" type="Button" parent="." unique_id=1992886274]
+offset_left = -1.0
+offset_top = 141.0
+offset_right = 166.0
+offset_bottom = 299.0
+flat = true
+script = ExtResource("2_yili2")
+
+[node name="Sprite2D" type="Sprite2D" parent="Button" unique_id=1967298479]
+position = Vector2(90.00001, 81)
+scale = Vector2(0.040736847, 0.03842105)
+texture = ExtResource("2_2clwq")
 
 [connection signal="text_submitted" from="Weight" to="." method="_on_weight_text_submitted"]
 [connection signal="text_submitted" from="Age" to="." method="_on_age_text_submitted"]
-[connection signal="pressed" from="Continue" to="Continue" method="_on_pressed"]
 [connection signal="text_submitted" from="LineEdit" to="." method="_on_line_edit_text_submitted"]
+[connection signal="pressed" from="Button" to="Button" method="_on_pressed"]
