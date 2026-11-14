@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://bfliv16j4nky6"]
+
+[ext_resource type="AudioStream" uid="uid://c17bwrosn8tii" path="res://Another Branch.mp3" id="1_fw6bl"]
+
+[node name="Node2D" type="Node2D" unique_id=143815695]
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=1954532030]
+stream = ExtResource("1_fw6bl")
+autoplay = true

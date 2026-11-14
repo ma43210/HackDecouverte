@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c17bwrosn8tii"
+path="res://.godot/imported/Another Branch.mp3-fbd164131fc3c38a5cfc064bb122eb08.mp3str"
+
+[deps]
+
+source_file="res://Another Branch.mp3"
+dest_files=["res://.godot/imported/Another Branch.mp3-fbd164131fc3c38a5cfc064bb122eb08.mp3str"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4
