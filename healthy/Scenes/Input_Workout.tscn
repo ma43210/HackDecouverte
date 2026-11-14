@@ -7,6 +7,8 @@
 [ext_resource type="Texture2D" uid="uid://c6n7to3boesth" path="res://Profile Pics/8.png" id="4_j1dy5"]
 [ext_resource type="Script" uid="uid://cej2ceieo7ujq" path="res://Scripts/sprite_2d.gd" id="4_r137e"]
 [ext_resource type="Script" uid="uid://b5wqpy7oaqngg" path="res://Scenes/name.gd" id="7_1oy2e"]
+[ext_resource type="Texture2D" uid="uid://cu6xvhn1qmxwf" path="res://Level_Up.png" id="8_j8f14"]
+[ext_resource type="Script" uid="uid://bbhgimyg8joj8" path="res://Scripts/level_up.gd" id="9_52ga0"]
 
 [node name="Node2D" type="Node2D" unique_id=1483333031]
 script = ExtResource("1_2av5n")
@@ -70,6 +72,12 @@ offset_right = 1139.0
 offset_bottom = 163.0
 horizontal_alignment = 1
 script = ExtResource("7_1oy2e")
+
+[node name="Sprite2D2" type="Sprite2D" parent="." unique_id=1833036522]
+position = Vector2(829, 373.00003)
+scale = Vector2(0.13692106, 0.10784211)
+texture = ExtResource("8_j8f14")
+script = ExtResource("9_52ga0")
 
 [connection signal="item_selected" from="ItemList" to="ItemList" method="_on_item_selected"]
 [connection signal="text_submitted" from="LineEdit" to="." method="_on_line_edit_text_submitted"]
